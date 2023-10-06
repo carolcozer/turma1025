@@ -7,13 +7,13 @@ import professionalsRouter from "../routes/professionalsRouter";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("<h3 style='color: blue'>Hello World</h3>");
+    res.send("<h3 style='color: green'>Hello World</h3>");
 });
 
 app.use("/students", studentsRouter);

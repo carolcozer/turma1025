@@ -16,7 +16,7 @@ const studentsRoot = (req: Request, res: Response, next: NextFunction) => {
     // logger.trace("trace");
     res.sendStatus(201);
 
-    // res.send("Página Inicial Students");
+    res.send("Página Inicial Students");
 }
 
 const studentsList = (req: Request, res: Response) => {
